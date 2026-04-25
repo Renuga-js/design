@@ -1,0 +1,67 @@
+﻿<Window x:Class="Wpfdesign.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dashboard" Height="520" Width="750"
+        Background="AliceBlue">
+
+    <StackPanel  Orientation="Horizontal">
+        
+        <!--Leftside-->
+        <StackPanel Width="200" Background="DarkBlue">
+            <TextBlock Text=" My Life"
+                       Foreground="White"
+                       FontSize="25"
+                       FontWeight="Bold"
+                       FontFamily="Calibri"
+                       Margin="18">
+                 </TextBlock>
+            <Button  Content="About Me" Margin="10"  Background="Aquamarine" Height="40" FontSize="15"></Button>
+            <Button  Content="Routine" Margin="10"  Background="Aquamarine" Height="40" FontSize="15"></Button>
+            <Button  Content="Goal" Margin="10"  Background="Aquamarine" Height="40" FontSize="15"></Button>
+            <Button  Content="Logout" Margin="10"  Background="Pink" Height="40" FontWeight="Bold" FontSize="15"></Button>
+
+        </StackPanel>
+        <!--Right Side-->
+
+        <StackPanel  Width="540">
+            <!--About Me-->
+            <Border Background="Bisque"
+                    Margin="10, 30,0,0">
+                <StackPanel>
+                    <TextBlock Text="About Me" Padding="3" FontSize="20"></TextBlock>
+                    <TextBox Height="90"
+                             TextWrapping="Wrap"
+                             BorderThickness="0"
+                             Background="LightGray"></TextBox>
+                </StackPanel>
+                
+            </Border>
+            <!--Routine-->
+            <Border Background="SkyBlue"
+         Margin="10, 30,0,0">
+                <StackPanel>
+                    <TextBlock Text="Routine" Padding="3" FontSize="20"></TextBlock>
+                    <TextBox Height="90"
+                  TextWrapping="Wrap"
+                  BorderThickness="0"
+                             Background="LightGray"></TextBox>
+                </StackPanel>
+
+            </Border>
+            <Border Background="PaleGreen"
+         Margin="10, 30,0,0">
+                <StackPanel>
+                    <TextBlock Text="Goal" Padding="3" FontSize="20"></TextBlock>
+                    <TextBox Height="90"
+                  TextWrapping="Wrap"
+                  BorderThickness="0"
+                             Background="LightGray"></TextBox>
+                </StackPanel>
+
+            </Border>
+        </StackPanel>
+        
+    </StackPanel>
+
+
+</Window>
